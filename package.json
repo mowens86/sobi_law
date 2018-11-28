@@ -1,0 +1,15 @@
+{
+  "name": "sobieraj-law",
+  "version": "1.0.0",
+  "description": "Steve's Responsive Attorney at Law Website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Michael Owens",
+  "license": "MIT"
+}
