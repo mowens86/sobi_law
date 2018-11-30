@@ -1,3 +1,22 @@
+/*////////////////////////////////*/
+/*// VARIABLES //*/
+html {
+  scroll-behavior: smooth; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
-  background: #444;
-  color: #fff; }
+  background-color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Patua One', cursive;
+  /*font-family: 'Roboto', sans-serif;*/ }
+
+p, a {
+  font-family: 'Roboto', sans-serif; }
+
+.highlight {
+  color: yellow; }
