@@ -1,5 +1,5 @@
 /*////////////////////////////////*/
-/*// VARIABLES //*/
+/*// MAIN AREA //*/
 html {
   scroll-behavior: smooth; }
 
@@ -18,5 +18,17 @@ h1, h2, h3, h4, h5, h6 {
 p, a {
   font-family: 'Roboto', sans-serif; }
 
-.highlight {
-  color: yellow; }
+/*////////////////////////////////*/
+/*// NAVIGATION BAR //*/
+.navbar {
+  background-color: #fff; }
+
+#navbar-1,
+#navbar-2,
+#navbar-3,
+#navbarDropdown {
+  color: #822642;
+  font-family: 'Patua One', cursive; }
+
+.dropdown-item {
+  font-family: 'Patua One', cursive; }
