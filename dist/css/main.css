@@ -8,15 +8,8 @@ html {
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  background-color: #333; }
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Patua One', cursive;
-  /*font-family: 'Roboto', sans-serif;*/ }
-
-p, a {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Lustria", serif; }
 
 /*////////////////////////////////*/
 /*// NAVIGATION BAR //*/
@@ -34,7 +27,7 @@ p, a {
 #navbarDropdown,
 .dropdown-item {
   color: #730335;
-  font-family: 'Patua One', cursive;
+  font-family: "Patua One", cursive;
   text-transform: uppercase;
   font-size: .8rem; }
 
@@ -45,7 +38,7 @@ p, a {
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .5s; }
+  transition: all .4s; }
 
 #navbar-1:hover,
 #navbar-2:hover,
@@ -87,3 +80,23 @@ nav.shift ul li a:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%; }
+
+/*////////////////////////////////*/
+/*// SHOWCASE //*/
+#showcase {
+  background-image: url(../img/law_books.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+#showcase,
+.overlay {
+  height: 500px; }
+
+#showcase h1 {
+  color: #fff;
+  padding: 6rem 0; }
