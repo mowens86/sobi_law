@@ -71,6 +71,7 @@ nav.shift ul li a:after {
   content: '.';
   color: transparent;
   background: #730335;
+  box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, 0.4);
   visibility: none;
   opacity: 0;
   z-index: -1;
