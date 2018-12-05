@@ -133,8 +133,9 @@ nav.shift ul li a:hover:after {
 }
 
 #showcase h1 {
+	font-size: 2rem;
 	color: $secondary-color;
-	padding: 2.5rem 0;
+	padding: 4rem 0;
 }
 
 /* Button Animation */
@@ -205,9 +206,55 @@ nav.shift ul li a:hover:after {
 	transform: rotateX(-180deg);
 }
 
+/*////////////////////////////////*/
+/*// MAIN AREA //*/
+
+#main-info h2 {
+	font-size: 1.5rem;
+	color: $fourth-color;
+}
+
+#main-info h4 {
+	font-size: 1rem;
+}
+
+#main-info h2 {
+	margin-top: 3rem;
+}
+
+#main-info .row {
+	margin: 2rem 0;
+}
+
+#main-info-cta {
+	color: $primary-color;
+}
+
+#main-info-cta a {
+	text-decoration: none;
+	color: $fourth-color;
+}
+
+#main-info-cta a:hover {
+	color: $third-color;
+}
+
+
+/*////////////////////////////////*/
+/*// MEDIA QUERIES //*/
+
 @media (min-width: 500px) {
 	#showcase h1 {
+		font-size: 2.5rem; 
 		padding: 4rem 0;
+	}
+
+	#main-info h2 {
+		font-size: 2rem;
+	}
+
+	#main-info h4 {
+		font-size: 1.25rem;
 	}
 }
 

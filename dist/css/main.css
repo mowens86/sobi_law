@@ -98,8 +98,9 @@ nav.shift ul li a:hover:after {
   height: 450px; }
 
 #showcase h1 {
+  font-size: 2rem;
   color: #fff;
-  padding: 2.5rem 0; }
+  padding: 4rem 0; }
 
 /* Button Animation */
 #showcase a {
@@ -159,9 +160,41 @@ nav.shift ul li a:hover:after {
 #showcase a:hover span.center {
   transform: rotateX(-180deg); }
 
+/*////////////////////////////////*/
+/*// MAIN AREA //*/
+#main-info h2 {
+  font-size: 1.5rem;
+  color: #730335; }
+
+#main-info h4 {
+  font-size: 1rem; }
+
+#main-info h2 {
+  margin-top: 3rem; }
+
+#main-info .row {
+  margin: 2rem 0; }
+
+#main-info-cta {
+  color: #333; }
+
+#main-info-cta a {
+  text-decoration: none;
+  color: #730335; }
+
+#main-info-cta a:hover {
+  color: #F1C40F; }
+
+/*////////////////////////////////*/
+/*// MEDIA QUERIES //*/
 @media (min-width: 500px) {
   #showcase h1 {
-    padding: 4rem 0; } }
+    font-size: 2.5rem;
+    padding: 4rem 0; }
+  #main-info h2 {
+    font-size: 2rem; }
+  #main-info h4 {
+    font-size: 1.25rem; } }
 
 @media (min-width: 1200px) {
   #showcase h1 {
