@@ -107,7 +107,7 @@ nav.shift ul li a:hover:after {
 #showcase a {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 200px;
+  width: 300px;
   height: 60px;
   text-align: center;
   transform-style: preserve-3d;
@@ -163,15 +163,19 @@ nav.shift ul li a:hover:after {
 
 /*////////////////////////////////*/
 /*// MAIN AREA //*/
-#main-info h2 {
+#main-info h2,
+#law-areas h2 {
+  margin-top: 3rem;
   font-size: 1.5rem;
   color: #730335; }
 
-#main-info h4 {
+#main-info h4,
+#law-areas h4 {
   font-size: 1rem; }
 
-#main-info h2 {
-  margin-top: 3rem; }
+#main-info p,
+#law-areas p {
+  font-size: .85rem; }
 
 #main-info .row {
   margin: 2rem 0; }
@@ -192,10 +196,15 @@ nav.shift ul li a:hover:after {
   #showcase h1 {
     font-size: 2.5rem;
     padding: 4rem 0; }
-  #main-info h2 {
+  #main-info h2,
+  #law-areas h2 {
     font-size: 2rem; }
-  #main-info h4 {
-    font-size: 1.25rem; } }
+  #main-info h4,
+  #law-areas h4 {
+    font-size: 1.25rem; }
+  #main-info p,
+  #law-areas p {
+    font-size: .95rem; } }
 
 @media (min-width: 1200px) {
   #showcase h1 {
