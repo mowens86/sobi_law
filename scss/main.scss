@@ -1,7 +1,7 @@
 
 $primary-color: #333;
 $secondary-color: #fff;
-$third-color: #F1C40F;
+$third-color: #d9b00d;
 $fourth-color: #730335;
 $show-home-image: true;
 $showcase-img: url(../img/law_books.jpg);
@@ -242,6 +242,89 @@ nav.shift ul li a:hover:after {
 
 #main-info-cta a:hover {
 	color: $third-color;
+}
+
+/*////////////////////////////////*/
+/*// AREAS OF LAW //*/
+
+#law-areas {
+	border: 1px solid red;
+}
+
+/* Areas of Law Animations */
+
+#law-areas a {
+	position: absolute;
+	transform: translate(-50%, 0);
+	width: 250px;
+	height: 200px;
+	text-align: center;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	transform-origin: center center;
+}
+
+#law-areas span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	background: rgba(255,255,255,.05);
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	color: #fff;
+	transition: 1s;
+}
+
+#law-areas span.front {
+	transform: rotateY(0deg) translateZ(20px);
+}
+
+#law-areas span.front i {
+	margin-top: 15px;
+}
+
+#law-areas a:hover span.front {
+	transform: rotateY(-180deg) translateZ(20px);
+}
+
+#law-areas span.back {
+	transform: rotateY(180deg) translateZ(20px);
+}
+
+#law-areas span.back p {
+	padding: 1rem;
+}
+
+#law-areas a:hover span.back {
+	transform: rotateY(0deg) translateZ(20px);
+}
+
+#law-areas span.center {
+	background: $fourth-color;
+}
+
+#law-areas span.center h4 {
+	margin-top: 170px;
+}
+
+#law-areas span.center:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $third-color;
+	border-radius: 10px;
+	transform: translateZ(-1px);
+}
+
+#law-areas a:hover span.center {
+	transform: rotateY(-180deg);
 }
 
 
