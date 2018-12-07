@@ -195,7 +195,6 @@ nav.shift ul li a:hover:after {
 #law-areas {
   border: 1px solid red; }
 
-/* Areas of Law Animations */
 #law-areas a {
   position: absolute;
   transform: translate(-50%, 0);
@@ -221,22 +220,22 @@ nav.shift ul li a:hover:after {
   transition: 1s; }
 
 #law-areas span.front {
-  transform: rotateY(0deg) translateZ(20px); }
+  transform: rotateY(0deg) translateZ(30px); }
 
 #law-areas span.front i {
   margin-top: 15px; }
 
 #law-areas a:hover span.front {
-  transform: rotateY(-180deg) translateZ(20px); }
+  transform: rotateY(-180deg) translateZ(30px); }
 
 #law-areas span.back {
-  transform: rotateY(180deg) translateZ(20px); }
+  transform: rotateY(180deg) translateZ(30px); }
 
 #law-areas span.back p {
   padding: 1rem; }
 
 #law-areas a:hover span.back {
-  transform: rotateY(0deg) translateZ(20px); }
+  transform: rotateY(0deg) translateZ(30px); }
 
 #law-areas span.center {
   background: #730335; }

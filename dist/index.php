@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-	 <!-- Normalize CSS -->
-	 <link rel="stylesheet" href="css/normalize.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Main CSS -->
-	 <link rel="stylesheet" href="css/main.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lustria|Patua+One|Roboto" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <title>Steven Sobieraj | Attorney At Law</title>
-  </head>
+  
+  <?php include 'head.php';?>
 
   <body>
 
@@ -82,10 +61,10 @@
         <h2 class="text-center">Steven Sobieraj, Attorney at Law</h2>
         <h4 class="text-center">Representing Clients in Criminal Defense, Traffic and DUIs, Real Estate and Civil Litigation.</h4>
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm-6">
             <p>Steven Sobieraj advocates boundlessly for clients, no matter how difficult their cases may be. He has five years of collective experience, backed by a reputation of the highest degree in Northern San Diego County for serving clients with commitment and skill. Every client has custom-tailored solutions created for their best interest.</p>
           </div>
-          <div class="col-sm">
+          <div class="col-sm-6">
             <p>Everyone deserves excellent criminal defense and Steven is always prepared to take on charges ranging from misdemeanors, felony, DUI, drug crimes, domestic violence and even sex offenses. You deserve strong legal advocacy, and Steven is committed to pursuing your best interests no matter what legal issue you face.</p>
           </div>
       </div>
@@ -96,31 +75,31 @@
       <div class="container">
         <h2 class="text-center">Areas of Law</h2>
         <div class="row text-center">
-          <div class="col-sm">
+          <div class="col-sm-3">
             <a href="#">
-              <span class="front"><i class="fas fa-shield-alt fa-6x"></i></span>
+              <span class="front"><i class="fas fa-shield-alt fa-5x"></i></span>
               <span class="center"><h4>Criminal Defense</h4></span>
               <span class="back"><p>When you or a loved one is charged with a crime, you or they become a criminal defendant. The government must prove guilt beyond a reasonable doubt before any charges can be made.</p></span>
             </a>
           </div>
-          <div class="col-sm">
+          <div class="col-sm-3">
             <a href="#">
-              <span class="front"><i class="fas fa-car fa-6x"></i></span>
+              <span class="front"><i class="fas fa-car fa-5x"></i></span>
               <span class="center"><h4>Traffic and DUIs</h4></span>
               <span class="back"><p>If you or a loved one has been charged with a DUI or a DWI, it's imperative that you act immediately. Once arrested you still have constitutional rights which are protected by the law.</p></span>
               </a>
           </div>
           
-          <div class="col-sm">
+          <div class="col-sm-3">
             <a href="#">
-              <span class="front"><i class="fas fa-home fa-6x"></i></span>
+              <span class="front"><i class="fas fa-home fa-5x"></i></span>
               <span class="center"><h4>Real Estate</h4></span>
               <span class="back"><p>Whether you're fighting for tenant rights or homeowner association disputes you can take legal action. Don't let your landlord or HOA take advantage of you. Protect yourself with your legal rights.</p></span>
             </a>
           </div>
-          <div class="col-sm">
+          <div class="col-sm-3">
             <a href="#">
-              <span class="front"><i class="fas fa-file-contract fa-6x"></i></span>
+              <span class="front"><i class="fas fa-file-contract fa-5x"></i></span>
               <span class="center"><h4>Civil Litigation</h4></span>
               <span class="back"><p>Automobile accidents and basic rights in the workplace are common mishaps that can be corrected. Whether its medical bills, damage to your vehicle, minimum wage, or overtime compensation.</p></span>
             </a>
