@@ -1,5 +1,17 @@
+/*/////////////////////////////////////////////////////////////////*/
+/*///// TABLE OF CONTENTS //////////////////////////////////*/
+/*  1. BASE STYLES
+	2. BORDERS
+	3. NAVIGATION BAR
+	4. SHOWCASE
+	5. MAIN AREA
+	6. AREAS OF LAW
+	7. FORM
+	   MEDIA QUERIES
+
+*/
 /*////////////////////////////////*/
-/*// MAIN AREA //*/
+/*// 1. BASE STYLES //*/
 html {
   scroll-behavior: smooth; }
 
@@ -12,10 +24,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lustria", serif; }
 
 /*////////////////////////////////*/
-/*// NAVIGATION BAR //*/
+.bottom-border {
+  border-bottom: 3px solid #d9b00d; }
+
+.border-top {
+  border-top: 3px solid #d9b00d; }
+
+/*////////////////////////////////*/
+/*// 3. NAVIGATION BAR //*/
 .navbar-brand {
   width: 50px;
-  height: 50px; }
+  height: 55px;
+  border: 2px solid #d9b00d; }
 
 .navbar {
   background-color: #fff; }
@@ -83,7 +103,7 @@ nav.shift ul li a:hover:after {
   height: 100%; }
 
 /*////////////////////////////////*/
-/*// SHOWCASE //*/
+/*// 5. SHOWCASE //*/
 #showcase {
   background-image: url(../img/law_books.jpg);
   background-attachment: fixed;
@@ -93,7 +113,7 @@ nav.shift ul li a:hover:after {
   margin-top: 60px; }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 #showcase,
 .overlay {
@@ -162,10 +182,11 @@ nav.shift ul li a:hover:after {
   transform: rotateX(-180deg); }
 
 /*////////////////////////////////*/
-/*// MAIN AREA //*/
+/*// 5. MAIN AREA //*/
 #main-info h2,
-#law-areas h2 {
-  margin-top: 3rem;
+#law-areas h2,
+#form h2 {
+  padding-top: 3rem;
   font-size: 1.5rem;
   color: #730335; }
 
@@ -178,10 +199,11 @@ nav.shift ul li a:hover:after {
   font-size: .85rem; }
 
 #main-info .row {
-  margin: 2rem 0; }
+  padding: 2rem 0; }
 
 #main-info-cta {
-  color: #333; }
+  color: #333;
+  padding-bottom: 3rem; }
 
 #main-info-cta a {
   text-decoration: none;
@@ -191,18 +213,19 @@ nav.shift ul li a:hover:after {
   color: #d9b00d; }
 
 /*////////////////////////////////*/
-/*// AREAS OF LAW //*/
+/*// 6. AREAS OF LAW //*/
 .law-overlay {
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(170, 137, 9, 0.3); }
 
 #law-areas {
-  background-image: url(../img/justice.jpg);
+  background-image: url(../img/lady-justice.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat; }
 
 #law-areas h2 {
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 1rem; }
 
 #law-areas .img-fluid {
   vertical-align: top; }
@@ -218,7 +241,7 @@ nav.shift ul li a:hover:after {
   transform-origin: center center; }
 
 #law-areas .col-sm-3 {
-  min-height: 225px;
+  min-height: 250px;
   min-width: 270px; }
 
 #law-areas span {
@@ -239,7 +262,7 @@ nav.shift ul li a:hover:after {
   transform: rotateY(0deg) translateZ(30px); }
 
 #law-areas span.front i {
-  margin-top: 15px; }
+  padding-top: 25px; }
 
 #law-areas a:hover span.front {
   transform: rotateY(-180deg) translateZ(30px); }
@@ -274,13 +297,31 @@ nav.shift ul li a:hover:after {
   transform: rotateY(-180deg); }
 
 /*////////////////////////////////*/
+/*// 7. FORM //*/
+#form input,
+#form select,
+#form textarea {
+  padding: .5rem;
+  border-radius: 5px;
+  margin: .8rem;
+  text-transform: uppercase; }
+
+#form input,
+#form select {
+  width: 90%; }
+
+#form textarea {
+  width: 90%; }
+
+/*////////////////////////////////*/
 /*// MEDIA QUERIES //*/
 @media (min-width: 500px) {
   #showcase h1 {
     font-size: 2.5rem;
     padding: 4rem 0; }
   #main-info h2,
-  #law-areas h2 {
+  #law-areas h2,
+  #form h2 {
     font-size: 2rem; }
   #main-info h4,
   #law-areas h4 {
