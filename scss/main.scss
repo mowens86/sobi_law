@@ -5,14 +5,29 @@ $third-color: #d9b00d;
 $fourth-color: #730335;
 $show-home-image: true;
 $showcase-img: url(../img/law_books.jpg);
+$lawareas-img: url(../img/justice.jpg);
 $background-opacity: 0.9;
 $header-font: 'Lustria', serif;
 $para-font: 'Roboto', sans-serif;
 $nav-font: 'Patua One', cursive;
 
+/*/////////////////////////////////////////////////////////////////*/
+/*///// TABLE OF CONTENTS //////////////////////////////////*/
+
+/*  1. BASE STYLES
+	2. BORDERS
+	3. NAVIGATION BAR
+	4. SHOWCASE
+	5. MAIN AREA
+	6. AREAS OF LAW
+	7. FORM
+	   MEDIA QUERIES
+
+*/	   	
+
 
 /*////////////////////////////////*/
-/*// MAIN AREA //*/
+/*// 1. BASE STYLES //*/
 
 html {
   scroll-behavior: smooth;
@@ -28,13 +43,24 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: $header-font;
 }
 
+/*////////////////////////////////*/
+///* 2. Borders //*/
+
+.bottom-border {
+	border-bottom: 3px solid $third-color;
+}
+
+.border-top {
+	border-top: 3px solid $third-color;
+}
 
 /*////////////////////////////////*/
-/*// NAVIGATION BAR //*/
+/*// 3. NAVIGATION BAR //*/
 
 .navbar-brand {
 	width: 50px;
-	height: 50px;
+	height: 55px;
+	border: 2px solid $third-color;
 }
 
 .navbar {
@@ -114,7 +140,7 @@ nav.shift ul li a:hover:after {
 }
 
 /*////////////////////////////////*/
-/*// SHOWCASE //*/
+/*// 5. SHOWCASE //*/
 
 #showcase {
 	background-image: $showcase-img;
@@ -122,10 +148,11 @@ nav.shift ul li a:hover:after {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 60px;
 }
 
 .overlay {
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.5);
 }
 
 #showcase,
@@ -139,7 +166,7 @@ nav.shift ul li a:hover:after {
 	padding: 4rem 0;
 }
 
-/* Button Animation */
+///* Button Animation *///
 
 #showcase a {
 	position: absolute;
@@ -208,11 +235,12 @@ nav.shift ul li a:hover:after {
 }
 
 /*////////////////////////////////*/
-/*// MAIN AREA //*/
+/*// 5. MAIN AREA //*/
 
 #main-info h2,
-#law-areas h2 {
-	margin-top: 3rem;
+#law-areas h2,
+#form h2 {
+	padding-top: 3rem;
 	font-size: 1.5rem;
 	color: $fourth-color;
 }
@@ -228,11 +256,12 @@ nav.shift ul li a:hover:after {
 }
 
 #main-info .row {
-	margin: 2rem 0;
+	padding: 2rem 0;
 }
 
 #main-info-cta {
 	color: $primary-color;
+	padding-bottom: 3rem;
 }
 
 #main-info-cta a {
@@ -245,10 +274,27 @@ nav.shift ul li a:hover:after {
 }
 
 /*////////////////////////////////*/
-/*// AREAS OF LAW //*/
+/*// 6. AREAS OF LAW //*/
+
+.law-overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+}
 
 #law-areas {
-	border: 1px solid red;
+	background-image: $lawareas-img;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#law-areas h2 {
+	color: $secondary-color;
+	padding-bottom: 1rem;
+}
+
+#law-areas .img-fluid {
+	vertical-align: top;
+
 }
 
 ////* Areas of Law Animations *////
@@ -262,6 +308,11 @@ nav.shift ul li a:hover:after {
 	transform-style: preserve-3d;
 	perspective: 1000px;
 	transform-origin: center center;
+}
+
+#law-areas .col-sm-3 {
+	min-height: 250px;
+	min-width: 270px;
 }
 
 #law-areas span {
@@ -284,7 +335,7 @@ nav.shift ul li a:hover:after {
 }
 
 #law-areas span.front i {
-	margin-top: 15px;
+	padding-top: 25px;
 }
 
 #law-areas a:hover span.front {
@@ -328,6 +379,82 @@ nav.shift ul li a:hover:after {
 }
 
 /*////////////////////////////////*/
+/*// 7. FORM //*/
+
+
+
+#form input,
+#form select,
+#form textarea {
+	padding: .5rem;
+	border-radius: 5px;
+	margin: .8rem;
+	text-transform: uppercase;
+}
+
+#form input,
+#form select {
+	width: 90%;
+}
+
+#form textarea {
+	width: 90%;
+}
+
+#form .btn-container {
+	height: 70px;
+}
+
+#form button {
+	width: 52.5%;
+	height: 50px;
+}
+
+/* Submit Button Effect */
+
+#form form .btn {
+  left: 50%;
+  display: block;
+  position: absolute;
+  transform: translate(-50%, 0%);
+  color: #000;
+  background-color: $secondary-color;
+  border: 2px solid $primary-color;
+  overflow: hidden;
+}
+
+#form form .btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: $fourth-color;
+
+  transition: .5s ease-in-out;
+  z-index: -1;  
+}
+
+#form form .btn:hover::before{
+  left: 0;
+  z-index: -1;
+}
+
+#form form .btn span {
+  transition: .5s ease-in-out;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  color: $fourth-color;
+  padding-top: 5px;
+}
+
+#form form .btn:hover span {
+  color: $secondary-color;
+}
+
+/*////////////////////////////////*/
 /*// MEDIA QUERIES //*/
 
 @media (min-width: 500px) {
@@ -337,7 +464,8 @@ nav.shift ul li a:hover:after {
 	}
 
 	#main-info h2,
-	#law-areas h2 {
+	#law-areas h2,
+	#form h2 {
 		font-size: 2rem;
 	}
 
@@ -359,5 +487,8 @@ nav.shift ul li a:hover:after {
 
 	.nav-item {
 		margin-left: 1rem;
-}
+	}
+
+	/* Areas of Law Icon Sizes & Font Sizes */
+
 }
