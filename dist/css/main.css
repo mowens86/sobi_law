@@ -213,7 +213,8 @@ nav.shift ul li a:hover:after {
 /*////////////////////////////////*/
 /*// 6. AREAS OF LAW //*/
 .law-overlay {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 2rem; }
 
 #law-areas {
   background-image: url(../img/justice.jpg);
@@ -298,8 +299,12 @@ nav.shift ul li a:hover:after {
 
 /*////////////////////////////////*/
 /*// 7. FORM //*/
+#form .form-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px; }
+
 #form h2 {
-  padding-top: 1rem;
+  padding: 1rem;
   font-size: 1.5rem;
   color: #fff; }
 

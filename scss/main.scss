@@ -276,6 +276,7 @@ nav.shift ul li a:hover:after {
 
 .law-overlay {
 	background-color: rgba(0, 0, 0, 0.7);
+	padding-bottom: 2rem;
 }
 
 #law-areas {
@@ -285,6 +286,7 @@ nav.shift ul li a:hover:after {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 #law-areas h2 {
 	color: $secondary-color;
@@ -381,8 +383,13 @@ nav.shift ul li a:hover:after {
 /*////////////////////////////////*/
 /*// 7. FORM //*/
 
+#form .form-overlay {
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+
 #form h2 {
-	padding-top: 1rem;
+	padding: 1rem;
 	font-size: 1.5rem;
 	color: $secondary-color;
 }
