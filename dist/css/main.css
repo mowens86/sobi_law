@@ -7,7 +7,8 @@
 	5. MAIN AREA
 	6. AREAS OF LAW
 	7. FORM
-	   MEDIA QUERIES
+	8. FOOTER
+	9. MEDIA QUERIES
 
 */
 /*////////////////////////////////*/
@@ -224,6 +225,7 @@ nav.shift ul li a:hover:after {
   background-size: cover; }
 
 #law-areas h2 {
+  font-size: 1.5rem;
   color: #fff;
   padding: 2rem 0; }
 
@@ -314,7 +316,8 @@ nav.shift ul li a:hover:after {
   padding: .5rem;
   border-radius: 5px;
   margin: .8rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #333; }
 
 #form input,
 #form select {
@@ -364,10 +367,12 @@ nav.shift ul li a:hover:after {
   padding-top: 5px; }
 
 #form form .btn:hover span {
-  color: #fff; }
+  color: #111; }
 
 /*////////////////////////////////*/
-/*// MEDIA QUERIES //*/
+/*// 8. FOOTER //*/
+/*////////////////////////////////*/
+/*// 9. MEDIA QUERIES //*/
 @media (min-width: 500px) {
   #showcase h1 {
     font-size: 2.5rem;

@@ -21,7 +21,8 @@ $nav-font: 'Patua One', cursive;
 	5. MAIN AREA
 	6. AREAS OF LAW
 	7. FORM
-	   MEDIA QUERIES
+	8. FOOTER
+	9. MEDIA QUERIES
 
 */	   	
 
@@ -289,6 +290,7 @@ nav.shift ul li a:hover:after {
 
 
 #law-areas h2 {
+	font-size: 1.5rem;
 	color: $secondary-color;
 	padding: 2rem 0;
 }
@@ -401,6 +403,7 @@ nav.shift ul li a:hover:after {
 	border-radius: 5px;
 	margin: .8rem;
 	text-transform: uppercase;
+	color: $primary-color;
 }
 
 #form input,
@@ -461,11 +464,17 @@ nav.shift ul li a:hover:after {
 }
 
 #form form .btn:hover span {
-  color: $secondary-color;
+  color: #111;
 }
 
 /*////////////////////////////////*/
-/*// MEDIA QUERIES //*/
+/*// 8. FOOTER //*/
+
+
+
+
+/*////////////////////////////////*/
+/*// 9. MEDIA QUERIES //*/
 
 @media (min-width: 500px) {
 	#showcase h1 {
