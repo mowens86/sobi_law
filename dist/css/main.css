@@ -9,7 +9,6 @@
 	7. FORM
 	8. FOOTER
 	9. MEDIA QUERIES
-
 */
 /*////////////////////////////////*/
 /*// 1. BASE STYLES //*/
@@ -204,11 +203,12 @@ nav.shift ul li a:hover:after {
   color: #333;
   padding-bottom: 3rem; }
 
-#main-info-cta a {
+#main-info-cta .phone {
   text-decoration: none;
-  color: #730335; }
+  color: #730335;
+  transition: .5s; }
 
-#main-info-cta a:hover {
+#main-info-cta .phone:hover {
   color: #d9b00d; }
 
 /*////////////////////////////////*/
@@ -375,13 +375,39 @@ nav.shift ul li a:hover:after {
 footer {
   border-top: 3px solid #d9b00d; }
 
+.footer-logo {
+  margin: 1rem 0; }
+
+footer .footer-border {
+  border-bottom: 3px solid #d9b00d; }
+
 footer .row {
-  border-bottom: 3px solid #d9b00d;
   padding: 1rem 0; }
 
-#footer a,
-#footer a:after,
-#footer a:before {
+#footer .phone {
+  text-decoration: none;
+  color: #730335;
+  transition: .5s; }
+
+#footer a:hover {
+  color: #d9b00d; }
+
+#footer p {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: #333; }
+
+#footer h5,
+#footer p {
+  padding: 0;
+  margin: 0; }
+
+#footer .copyright {
+  font-size: .75rem; }
+
+#footer .footer-anim,
+#footer .footer-anim:after,
+#footer .footer-anim:before {
   color: #730335;
   font-family: "Patua One", cursive;
   text-transform: uppercase;
@@ -392,17 +418,17 @@ footer .row {
   padding: .5rem; }
 
 /* Footer Animation Effects */
-#footer a:hover {
+#footer .footer-anim:hover {
   color: #d9b00d; }
 
-footer.shift ul li a {
+footer.shift .footer-anim {
   position: relative;
   z-index: 1; }
 
-footer.shift a:hover {
+footer.shift .footer-anim:hover {
   color: #d9b00d; }
 
-footer.shift a:after {
+footer.shift .footer-anim:after {
   display: block;
   position: absolute;
   top: 0;
@@ -421,7 +447,7 @@ footer.shift a:after {
   z-index: -1;
   border-radius: 5px; }
 
-footer.shift a:hover:after {
+footer.shift .footer-anim:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%; }

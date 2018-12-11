@@ -23,7 +23,6 @@ $nav-font: 'Patua One', cursive;
 	7. FORM
 	8. FOOTER
 	9. MEDIA QUERIES
-
 */	   	
 
 
@@ -263,12 +262,13 @@ nav.shift ul li a:hover:after {
 	padding-bottom: 3rem;
 }
 
-#main-info-cta a {
+#main-info-cta .phone {
 	text-decoration: none;
 	color: $fourth-color;
+	transition: .5s;
 }
 
-#main-info-cta a:hover {
+#main-info-cta .phone:hover {
 	color: $third-color;
 }
 
@@ -475,14 +475,47 @@ footer {
 	border-top: 3px solid $third-color;
 }
 
-footer .row {
+.footer-logo {
+	margin: 1rem 0;
+}
+
+footer .footer-border {
 	border-bottom: 3px solid $third-color;
+}
+
+footer .row {
 	padding: 1rem 0;
 }
 
-#footer a,
-#footer a:after,
-#footer a:before {
+#footer .phone {
+	text-decoration: none;
+	color: $fourth-color;
+	transition: .5s;
+}
+
+#footer a:hover {
+	color: $third-color;
+}
+
+#footer p {
+	text-transform: uppercase;
+	font-family: $para-font;
+	color: $primary-color;
+}
+
+#footer h5,
+#footer p {
+	padding: 0;
+	margin: 0;
+}
+
+#footer .copyright {
+	font-size: .75rem;
+}
+
+#footer .footer-anim,
+#footer .footer-anim:after,
+#footer .footer-anim:before {
 	color: $fourth-color;
 	font-family: $nav-font;
 	text-transform: uppercase;
@@ -496,22 +529,20 @@ footer .row {
 /* Footer Animation Effects */
 
 
-
-
-#footer a:hover {
+#footer .footer-anim:hover {
   color: $third-color;
 }
 
-footer.shift ul li a {
+footer.shift .footer-anim {
   position:relative;
   z-index: 1;
 }
 
-footer.shift a:hover {
+footer.shift .footer-anim:hover {
   color: $third-color;
 }
 
-footer.shift a:after {
+footer.shift .footer-anim:after {
   display: block;
   position: absolute;
   top: 0;
@@ -531,7 +562,7 @@ footer.shift a:after {
   border-radius: 5px;
 }
 
-footer.shift a:hover:after {
+footer.shift .footer-anim:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
