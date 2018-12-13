@@ -1,6 +1,7 @@
 /*/////////////////////////////////////////////////////////////////*/
 /*///// TABLE OF CONTENTS //////////////////////////////////*/
-/*////////////////////////////////////////  
+/*////////////////////////////////////////
+
 	1. BASE STYLES
 	2. BORDERS
 	3. NAVIGATION BAR
@@ -35,6 +36,9 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lustria", serif; }
 
+p {
+  font-family: "Roboto", sans-serif; }
+
 /*////////////////////////////////*/
 .bottom-border {
   border-bottom: 3px solid #d9b00d; }
@@ -46,7 +50,9 @@ h1, h2, h3, h4, h5, h6 {
 /*// 3. NAVIGATION BAR //*/
 .navbar-brand {
   width: 40px;
-  border: 2px solid #d9b00d; }
+  border: 2px solid #d9b00d;
+  padding: 0;
+  margin: 0; }
 
 .navbar {
   background-color: #fff; }
@@ -121,7 +127,7 @@ nav.shift ul li a:hover:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 60px; }
+  margin-top: 55px; }
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.5); }
@@ -389,7 +395,7 @@ nav.shift ul li a:hover:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 60px; }
+  margin-top: 55px; }
 
 .def-overlay {
   background-color: rgba(0, 0, 0, 0.5); }
@@ -407,6 +413,9 @@ nav.shift ul li a:hover:after {
 #def-showcase h3 {
   font-size: 1.25rem;
   color: #fff; }
+
+#def-info {
+  margin: 3rem 0; }
 
 .def-form-overlay {
   background-color: rgba(0, 0, 0, 0.9);
