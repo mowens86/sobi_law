@@ -1,15 +1,27 @@
 /*/////////////////////////////////////////////////////////////////*/
 /*///// TABLE OF CONTENTS //////////////////////////////////*/
-/*  1. BASE STYLES
+/*////////////////////////////////////////  
+	1. BASE STYLES
 	2. BORDERS
 	3. NAVIGATION BAR
+
+/-------- HOMEPAGE --------/
+
 	4. SHOWCASE
 	5. MAIN AREA
 	6. AREAS OF LAW
 	7. FORM
-	8. FOOTER
-	9. MEDIA QUERIES
-*/
+
+/-------- DEFENSE ---------/
+
+	8. DEF-SHOWCASE
+
+/---- FOOTER & MEDIA QUERIES -----/
+
+	 FOOTER
+	 MEDIA QUERIES
+
+////////////////////////////////////*/
 /*////////////////////////////////*/
 /*// 1. BASE STYLES //*/
 html {
@@ -33,8 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 /*////////////////////////////////*/
 /*// 3. NAVIGATION BAR //*/
 .navbar-brand {
-  width: 50px;
-  height: 55px;
+  width: 40px;
   border: 2px solid #d9b00d; }
 
 .navbar {
@@ -103,7 +114,7 @@ nav.shift ul li a:hover:after {
   height: 100%; }
 
 /*////////////////////////////////*/
-/*// 5. SHOWCASE //*/
+/*// 4. SHOWCASE //*/
 #showcase {
   background-image: url(../img/law_books.jpg);
   background-attachment: fixed;
@@ -371,7 +382,31 @@ nav.shift ul li a:hover:after {
   color: #111; }
 
 /*////////////////////////////////*/
-/*// 8. FOOTER //*/
+/*// 8. DEF-SHOWCASE //*/
+#def-showcase {
+  background-image: url(../img/handcuffs.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 60px; }
+
+#def-showcase,
+.overlay {
+  height: 300px; }
+
+#def-showcase h1 {
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 2rem; }
+
+#def-showcase h3 {
+  font-size: 1.25rem;
+  color: #fff; }
+
+/*////////////////////////////////*/
+/*// FOOTER //*/
 footer {
   border-top: 3px solid #d9b00d; }
 
@@ -457,9 +492,10 @@ footer.shift .footer-anim:hover:after {
   width: 100px; }
 
 /*////////////////////////////////*/
-/*// 9. MEDIA QUERIES //*/
+/*// MEDIA QUERIES //*/
 @media (min-width: 500px) {
-  #showcase h1 {
+  #showcase h1,
+  #def-showcase h1 {
     font-size: 2.5rem;
     padding: 4rem 0; }
   #main-info h2,
@@ -476,6 +512,7 @@ footer.shift .footer-anim:hover:after {
 @media (min-width: 1200px) {
   #showcase h1 {
     padding: 6rem 0; }
+  #def-showcase h3 {
+    font-size: 1.5rem; }
   .nav-item {
-    margin-left: 1rem; }
-  /* Areas of Law Icon Sizes & Font Sizes */ }
+    margin-left: 1rem; } }
