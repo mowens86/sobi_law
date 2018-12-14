@@ -239,7 +239,7 @@ nav.shift ul li a:hover:after {
   background-repeat: no-repeat;
   background-size: cover; }
 
-#law-areas h2 {
+#law-areas .h2-law {
   font-size: 1.5rem;
   color: #fff;
   padding: 2rem 0; }
