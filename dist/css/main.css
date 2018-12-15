@@ -317,6 +317,7 @@ nav.shift ul li a:hover:after {
 
 #law-areas .flip-btn {
   font-size: .9rem;
+  font-family: "Patua One", cursive;
   color: #730335;
   width: 80%;
   padding: 8px 0;
@@ -327,7 +328,7 @@ nav.shift ul li a:hover:after {
   border-radius: 10px;
   background: white;
   margin-top: 165px;
-  transition: background .5s; }
+  transition: all .5s; }
 
 #law-areas .flip-btn:hover {
   background: #730335;
