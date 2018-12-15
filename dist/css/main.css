@@ -248,11 +248,11 @@ nav.shift ul li a:hover:after {
   vertical-align: top;
   width: 100%; }
 
-#law-areas a {
+#law-areas .flip {
   position: absolute;
-  transform: translate(-50%, 0);
+  transform: translate(25%, 0);
   width: 250px;
-  height: 200px;
+  height: 225px;
   text-align: center;
   transform-style: preserve-3d;
   perspective: 1000px;
@@ -262,7 +262,7 @@ nav.shift ul li a:hover:after {
   min-height: 250px;
   min-width: 270px; }
 
-#law-areas span {
+#law-areas .law-span {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -276,31 +276,31 @@ nav.shift ul li a:hover:after {
   color: #fff;
   transition: 1s; }
 
-#law-areas span.front {
+#law-areas .law-span.front {
   transform: rotateY(0deg) translateZ(30px); }
 
-#law-areas span.front i {
+#law-areas .law-span.front i {
   padding-top: 25px; }
 
-#law-areas a:hover span.front {
+#law-areas .flip:hover .law-span.front {
   transform: rotateY(-180deg) translateZ(30px); }
 
-#law-areas span.back {
+#law-areas .law-span.back {
   transform: rotateY(180deg) translateZ(30px); }
 
-#law-areas span.back p {
-  padding: 1rem; }
+#law-areas .law-span.back p {
+  padding: 1.75rem 1rem; }
 
-#law-areas a:hover span.back {
+#law-areas .flip:hover .law-span.back {
   transform: rotateY(0deg) translateZ(30px); }
 
-#law-areas span.center {
+#law-areas .law-span.center {
   background: #730335; }
 
-#law-areas span.center h4 {
-  margin-top: 170px; }
+#law-areas .law-span.center h4 {
+  margin-top: 180px; }
 
-#law-areas span.center:before {
+#law-areas .law-span.center:before {
   content: '';
   position: absolute;
   top: 0;
@@ -311,8 +311,26 @@ nav.shift ul li a:hover:after {
   border-radius: 10px;
   transform: translateZ(-1px); }
 
-#law-areas a:hover span.center {
+#law-areas .flip:hover .law-span.center {
   transform: rotateY(-180deg); }
+
+#law-areas .flip-btn {
+  font-size: .9rem;
+  color: #fff;
+  width: 80%;
+  padding: 8px 0;
+  font-weight: 575;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: rgba(115, 3, 53, 0.9);
+  margin: auto;
+  margin-top: 165px;
+  transition: background .5s; }
+
+#law-areas .flip-btn:hover {
+  background: #000; }
 
 /*////////////////////////////////*/
 /*// 7. FORM //*/
@@ -349,7 +367,7 @@ nav.shift ul li a:hover:after {
   height: 50px; }
 
 /* Submit Button Effect */
-.main-form form .btn {
+.main-form form .form-btn {
   left: 50%;
   display: block;
   border-radius: 10px;
@@ -357,9 +375,10 @@ nav.shift ul li a:hover:after {
   transform: translate(-50%, 0%);
   background-color: #730335;
   border: 2px solid #333;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
 
-.main-form form .btn:before {
+.main-form form .form-btn:before {
   content: '';
   position: absolute;
   top: 0;
@@ -370,20 +389,23 @@ nav.shift ul li a:hover:after {
   transition: .5s ease-in-out;
   z-index: -1; }
 
-.main-form form .btn:hover::before {
+.main-form form .form-btn:hover::before {
   left: 0;
   z-index: -1; }
 
-.main-form form .btn span {
-  transition: .5s ease-in-out;
+.main-form form .form-btn span {
+  transition: color .5s;
+  color: #fff;
   z-index: 1;
   left: 0;
   top: 0;
-  color: #fff;
-  padding-top: 5px; }
+  padding-top: 5px;
+  font-size: 1.25rem;
+  text-transform: uppercase; }
 
-.main-form form .btn:hover span {
-  color: #111; }
+.main-form form .form-btn:hover span {
+  color: #111;
+  transition: color .5s; }
 
 /*////////////////////////////////*/
 /*// 8. DEF-SHOWCASE //*/
@@ -527,16 +549,18 @@ footer.shift .footer-anim:hover:after {
 /*////////////////////////////////*/
 /*// MEDIA QUERIES //*/
 @media (min-width: 500px) {
-  p {
+  #main-info p {
     font-size: .95rem; }
   #showcase h1,
   #def-showcase h1 {
     font-size: 2.5rem;
     padding: 4rem 0; }
   #main-info h2,
-  #law-areas h2,
+  #law-areas .h2-law,
   #form h2 {
     font-size: 2rem; }
+  #law-areas .flip {
+    transform: translate(0, 0); }
   #main-info h4,
   #law-areas h4 {
     font-size: 1.25rem; } }
