@@ -427,7 +427,8 @@ nav.shift ul li a:hover:after {
   border-bottom: 2px solid #ccc;
   padding: 1rem 0;
   font-weight: bold;
-  font-style: italic; }
+  font-style: italic;
+  line-height: 1.5; }
 
 #def-info .phone {
   text-decoration: none;
@@ -546,4 +547,7 @@ footer.shift .footer-anim:hover:after {
   #def-showcase h3 {
     font-size: 1.5rem; }
   .nav-item {
-    margin-left: 1rem; } }
+    margin-left: 1rem; }
+  .main-form button {
+    max-width: 1000px;
+    height: 50px; } }
