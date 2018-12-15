@@ -289,7 +289,8 @@ nav.shift ul li a:hover:after {
   transform: rotateY(180deg) translateZ(30px); }
 
 #law-areas .law-span.back p {
-  padding: 1.75rem 1rem; }
+  padding: 1.75rem 1rem;
+  color: #fff; }
 
 #law-areas .flip:hover .law-span.back {
   transform: rotateY(0deg) translateZ(30px); }
@@ -316,21 +317,21 @@ nav.shift ul li a:hover:after {
 
 #law-areas .flip-btn {
   font-size: .9rem;
-  color: #fff;
+  color: #730335;
   width: 80%;
   padding: 8px 0;
   font-weight: 575;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 5px;
-  background: rgba(115, 3, 53, 0.9);
-  margin: auto;
+  border-radius: 10px;
+  background: white;
   margin-top: 165px;
   transition: background .5s; }
 
 #law-areas .flip-btn:hover {
-  background: #000; }
+  background: #730335;
+  color: #d9b00d; }
 
 /*////////////////////////////////*/
 /*// 7. FORM //*/
