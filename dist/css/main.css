@@ -341,7 +341,10 @@ nav.shift ul li a:hover:after {
   border-radius: 10px; }
 
 .main-form h2 {
-  padding: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: .85rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 1.5rem;
   color: #fff; }
 
@@ -362,7 +365,7 @@ nav.shift ul li a:hover:after {
   width: 90%; }
 
 .main-form .btn-container {
-  height: 70px; }
+  height: 90px; }
 
 .main-form button {
   width: 52.5%;
