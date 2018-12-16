@@ -446,6 +446,9 @@ nav.shift ul li a:hover:after {
 .h4-content {
   color: #730335; }
 
+.page-p {
+  line-height: 1.75; }
+
 .page-cta {
   border-top: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
@@ -589,7 +592,9 @@ footer.shift .footer-anim:hover:after {
 @media (min-width: 1200px) {
   #showcase h1 {
     padding: 6rem 0; }
-  #def-showcase h3 {
+  .h1-showcase {
+    font-size: 2.5rem; }
+  .h3-showcase {
     font-size: 1.5rem; }
   .nav-item {
     margin-left: 1rem; }
