@@ -465,6 +465,13 @@ nav.shift ul li a:hover:after {
 #page-info .phone:hover {
   color: #d9b00d; }
 
+.highlight {
+  color: #730335;
+  font-weight: bold; }
+
+.italics-p {
+  font-style: italic; }
+
 /*////////////////////////////////*/
 /*// 9. DEF-SHOWCASE //*/
 #def-showcase {
