@@ -483,9 +483,19 @@ nav.shift ul li a:hover:after {
   margin-top: 55px; }
 
 /*////////////////////////////////*/
-/*// 10. DEF-SHOWCASE //*/
+/*// 10. TRAFFIC-SHOWCASE //*/
 #traffic-showcase {
   background-image: url(../img/car-accident.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 55px; }
+
+/*////////////////////////////////*/
+/*// 11. ESTATE-SHOWCASE //*/
+#estate-showcase {
+  background-image: url(../img/real_estate.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
