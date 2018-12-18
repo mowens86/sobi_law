@@ -10,6 +10,8 @@ $lawareas-img: url(../img/justice.jpg);
 $def-showcase: url(../img/handcuffs.jpg);
 $traffic-showcase: url(../img/car-accident.jpg);
 $estate-showcase: url(../img/real_estate.jpg);
+$civil-showcase: url(../img/personal_injury.jpg);
+$testimonials-showcase: url(../img/testimonials.jpg);
 
 $header-font: 'Lustria', serif;
 $para-font: 'Roboto', sans-serif;
@@ -34,10 +36,11 @@ $nav-font: 'Patua One', cursive;
 /-------- OTHER PAGES --------/
 
 	8. OTHER PAGES GENERAL CLASSES
-
-/-------- DEFENSE ---------/
-
 	9. DEF-SHOWCASE
+	10.TRAFFIC-SHOWCASE
+	11.REAL ESTATE
+    12.CIVIL LITIGATION
+	13.TESTIMONIALS
 
 /---- FOOTER & MEDIA QUERIES -----/
 
@@ -95,10 +98,7 @@ p {
 	background-color: $secondary-color;
 }
 
-#navbar-1,
-#navbar-2,
-#navbar-3,
-#navbar-4,
+.navbar-c,
 #navbarDropdown,
 .dropdown-item {
 	color: $fourth-color;
@@ -119,10 +119,7 @@ nav ul li a:before {
   transition: all .4s;
 }
 
-#navbar-1:hover,
-#navbar-2:hover,
-#navbar-3:hover,
-#navbar-4:hover,
+.navbar-c:hover,
 #navbarDropdown:hover,
 .dropdown-item:hover {
 	color: $third-color;
@@ -624,6 +621,53 @@ nav.shift ul li a:hover:after {
     background-size: cover;
     margin-top: 55px;
 }
+
+/*////////////////////////////////*/
+/*// 11. CIVIL-SHOWCASE //*/
+
+#civil-showcase {
+	background-image: $civil-showcase;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 55px;
+}
+
+/*////////////////////////////////*/
+/*// 12. ATTORNEY SERVICES //*/
+
+
+/*////////////////////////////////*/
+/*// 13. CLIENT TESTIMONIALS //*/
+
+
+#testimonials-showcase {
+	background-image: $testimonials-showcase;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 55px;
+}
+
+
+
+blockquote .b-quo {
+  position: relative;
+  color: #888;
+}  
+
+ .block-foot {
+  font-family: $nav-font;
+  color: $fourth-color;
+  border-bottom: 3px solid #555;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+}
+ 
+
+
 /*////////////////////////////////*/
 /*// FOOTER //*/
 

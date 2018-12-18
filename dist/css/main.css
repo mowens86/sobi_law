@@ -16,10 +16,11 @@
 /-------- OTHER PAGES --------/
 
 	8. OTHER PAGES GENERAL CLASSES
-
-/-------- DEFENSE ---------/
-
 	9. DEF-SHOWCASE
+	10.TRAFFIC-SHOWCASE
+	11.REAL ESTATE
+    12.CIVIL LITIGATION
+	13.TESTIMONIALS
 
 /---- FOOTER & MEDIA QUERIES -----/
 
@@ -63,10 +64,7 @@ p {
 .navbar {
   background-color: #fff; }
 
-#navbar-1,
-#navbar-2,
-#navbar-3,
-#navbar-4,
+.navbar-c,
 #navbarDropdown,
 .dropdown-item {
   color: #730335;
@@ -83,10 +81,7 @@ nav ul li a:after,
 nav ul li a:before {
   transition: all .4s; }
 
-#navbar-1:hover,
-#navbar-2:hover,
-#navbar-3:hover,
-#navbar-4:hover,
+.navbar-c:hover,
 #navbarDropdown:hover,
 .dropdown-item:hover {
   color: #d9b00d; }
@@ -501,6 +496,39 @@ nav.shift ul li a:hover:after {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 55px; }
+
+/*////////////////////////////////*/
+/*// 11. CIVIL-SHOWCASE //*/
+#civil-showcase {
+  background-image: url(../img/personal_injury.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 55px; }
+
+/*////////////////////////////////*/
+/*// 12. ATTORNEY SERVICES //*/
+/*////////////////////////////////*/
+/*// 13. CLIENT TESTIMONIALS //*/
+#testimonials-showcase {
+  background-image: url(../img/testimonials.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 55px; }
+
+blockquote .b-quo {
+  position: relative;
+  color: #888; }
+
+.block-foot {
+  font-family: "Patua One", cursive;
+  color: #730335;
+  border-bottom: 3px solid #555;
+  border-radius: 10px;
+  padding-bottom: 1rem; }
 
 /*////////////////////////////////*/
 /*// FOOTER //*/
