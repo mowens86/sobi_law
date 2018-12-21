@@ -12,6 +12,7 @@ $traffic-showcase: url(../img/car-accident.jpg);
 $estate-showcase: url(../img/real_estate.jpg);
 $civil-showcase: url(../img/personal_injury.jpg);
 $testimonials-showcase: url(../img/testimonials.jpg);
+$priv-showcase: url(../img/library.jpg);
 
 $header-font: 'Lustria', serif;
 $para-font: 'Roboto', sans-serif;
@@ -40,7 +41,8 @@ $nav-font: 'Patua One', cursive;
 	10.TRAFFIC-SHOWCASE
 	11.REAL ESTATE
     12.CIVIL LITIGATION
-	13.TESTIMONIALS
+    13.ATTORNEY SERVICES
+	14.TESTIMONIALS
 
 /---- FOOTER & MEDIA QUERIES -----/
 
@@ -516,6 +518,12 @@ nav.shift ul li a:hover:after {
   transition: color .5s;
 }
 
+.main-form .g-recaptcha {
+	padding-bottom: 1rem;
+	margin: 0 auto;
+	width: 304px;
+}
+
 /*////////////////////////////////*/
 /*// 8. PAGES GENERAL CLASSES //*/
 
@@ -623,7 +631,7 @@ nav.shift ul li a:hover:after {
 }
 
 /*////////////////////////////////*/
-/*// 11. CIVIL-SHOWCASE //*/
+/*// 12. CIVIL-SHOWCASE //*/
 
 #civil-showcase {
 	background-image: $civil-showcase;
@@ -635,11 +643,11 @@ nav.shift ul li a:hover:after {
 }
 
 /*////////////////////////////////*/
-/*// 12. ATTORNEY SERVICES //*/
+/*// 13. ATTORNEY SERVICES //*/
 
 
 /*////////////////////////////////*/
-/*// 13. CLIENT TESTIMONIALS //*/
+/*// 14. CLIENT TESTIMONIALS //*/
 
 
 #testimonials-showcase {
@@ -666,6 +674,17 @@ blockquote .b-quo {
   padding-bottom: 1rem;
 }
  
+/*////////////////////////////////*/
+/*// 15. PRIVACY-SHOWCASE //*/
+
+#priv-showcase {
+	background-image: $priv-showcase;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 55px;
+}
 
 
 /*////////////////////////////////*/
