@@ -33,49 +33,8 @@
   </head>
 
   <body>
-
-    <header>
-      <nav class="fixed-top navbar navbar-expand-sm shift bottom-border">
-        <div class="container">
-          <a href="index.html">
-            <img class="navbar-brand" src="img/SS_logo.png">
-          </a>
-          <button id="nav-button" class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="#navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav text-center ml-auto">
-              <li class="nav-item">
-                <a class="nav-link navbar-c" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Areas of Law</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="defense.html">Criminal Defense</a>
-                  <a class="dropdown-item" href="#">Traffic and DUIs</a>
-                  <a class="dropdown-item" href="#">Real Estate</a>
-                  <a class="dropdown-item" href="#">Civil Litigation</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-c" href="#form">Client Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-c" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-c" href="#form">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-c" href="tel:7605473915">Call: 760-547-3915</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
+    
+    <?php include "navbar.php";?>
 
     <section id="showcase" alt="Southern California Attorney at Law">
       <div class="overlay">
@@ -117,7 +76,7 @@
                 <span class="front law-span"><i class="fas fa-shield-alt fa-6x"></i></span>
                 <span class="center law-span"><h4>Criminal Defense</h4></span>
                 <span class="back law-span"><p>When you or a loved one is charged with a crime, you or they become a criminal defendant. The government must prove guilt beyond a reasonable doubt before any charges can be made.</p></span>
-                <span class="back law-span"><a href="#" class="flip-btn">Learn More</a></span>
+                <span class="back law-span"><a href="defense.php" class="flip-btn">Learn More</a></span>
 
               </div>
             </div>
@@ -127,7 +86,7 @@
                 <span class="front law-span"><i class="fas fa-car fa-6x"></i></span>
                 <span class="center law-span"><h4>Traffic and DUIs</h4></span>
                 <span class="back law-span"><p>If you or a loved one has been charged with a DUI or a DWI, it's imperative that you act immediately. Once arrested you still have constitutional rights which are protected by the law.</p></span>
-                <span class="back law-span"><a href="#" class="flip-btn">Learn More</a></span>
+                <span class="back law-span"><a href="traffic.php" class="flip-btn">Learn More</a></span>
                 </div>
 
             </div>
@@ -137,7 +96,7 @@
                 <span class="front law-span"><i class="fas fa-home fa-6x"></i></span>
                 <span class="center law-span"><h4>Real Estate</h4></span>
                 <span class="back law-span"><p>Whether you're fighting for tenant rights or homeowner association disputes you can take legal action. Don't let your landlord or HOA take advantage of you. Protect yourself with your legal rights.</p></span>
-                <span class="back law-span"><a href="#" class="flip-btn">Learn More</a></span>
+                <span class="back law-span"><a href="estate.php" class="flip-btn">Learn More</a></span>
               </div>
             </div>
 
@@ -146,62 +105,19 @@
                 <span class="front law-span"><i class="fas fa-file-contract fa-6x"></i></span>
                 <span class="center law-span"><h4>Civil Litigation</h4></span>
                 <span class="back law-span"><p>Automobile accidents and basic rights in the workplace are common mishaps that can be corrected. Whether its medical bills, damage to your vehicle, minimum wage, or overtime compensation.</p></span>
-                <span class="back law-span"><a href="#" class="flip-btn">Learn More</a></span>
+                <span class="back law-span"><a href="civil.php" class="flip-btn">Learn More</a></span>
               </div>
             </div> 
 
           </div>
 
-          <section id="form" class="main-form text-center">
-            <form action="" class="text-center form-overlay" method="POST">
-              <h2 class="text-center">Schedule Your Free Consultation</h2>
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your E-mail" required>
-              <input type="tel" name="phone" placeholder="Your Phone #" required>
-              <select name="selection" id="client">
-                <option value="default">Are you a new client?</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-                <option value="neither">I'm neither</option>
-              </select>
-              <textarea name="client-info" id="textarea" placeholder="Tell us a little about your case"></textarea>
-              <div class="g-recaptcha" data-sitekey="6LdW2IMUAAAAAE1sC0dk8dv21teByaJtxKgyLc4V"></div>
-              <div class="btn-container">
-                <button type="submit" class="form-btn"><span class="form-span">Submit</span></button>
-              </div>
-
-            </form>
-          </section>
+          <?php include "main-form.php";?>
 
         </div>
       </div>
     </section>
 
-    <footer id="footer" class="shift">
-      <div class="container">
-        <div class="row footer-border text-center shift">
-
-          <div class="col-sm-4">
-            <a class="footer-anim" href="index.html">Home</a>
-          </div>
-
-          <div class="col-sm-4">
-            <a class="footer-anim" href="#">Privacy Policy</a>
-          </div>
-
-          <div class="col-sm-4">
-            <a class="footer-anim" href="#">Contact Us</a>
-          </div>          
-
-        </div>
-        <div class="text-center">
-          <img class="footer-logo" src="img/SS_logo.png">
-          <h5>Steven Sobieraj, Attorney at Law</h5>
-          <p>Call today <strong><a class="phone" href="tel:7605473915">760-547-3915</a></strong></p>
-          <p class="copyright">&copy; 2018 All Rights Reserved</p>
-        </div> 
-      </div>
-    </footer>
+    <?php include "footer.php";?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

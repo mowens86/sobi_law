@@ -26,52 +26,15 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- RECAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <title>Client Testimonials | Steven Sobieraj, Attorney at Law</title>
   </head>
 
   <body>
 
-    <header>
-      <nav class="fixed-top navbar navbar-expand-sm shift bottom-border">
-        <div class="container">
-          <a href="index.html">
-            <img class="navbar-brand" src="img/SS_logo.png">
-          </a>
-          <button id="nav-button" class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="#navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav text-center ml-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Areas of Law</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="defense.html">Criminal Defense</a>
-                  <a class="dropdown-item" href="#">Traffic and DUIs</a>
-                  <a class="dropdown-item" href="#">Real Estate</a>
-                  <a class="dropdown-item" href="#">Civil Litigation</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-c" href="#">Attorney Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-c" href="#form">Client Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-c" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-c" href="#form">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navbar-c" href="tel:7605473915">Call: 760-547-3915</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <?php include "navbar.php";?>
 
     <section id="testimonials-showcase" alt="Client Testimonials">
       <div class="page-overlay">
@@ -125,6 +88,7 @@
                 <option value="neither">I'm neither</option>
               </select>
               <textarea name="" id="textarea" placeholder="Tell us a little about your case"></textarea>
+              <div class="g-recaptcha" data-sitekey="6LdW2IMUAAAAAE1sC0dk8dv21teByaJtxKgyLc4V"></div>
               <div class="btn-container">
                 <button type="submit" class="form-btn"><span class="form-span">Submit</span></button>
               </div>
@@ -135,31 +99,7 @@
       </div>
     </section>
 
-    <footer id="footer" class="shift">
-      <div class="container">
-        <div class="row footer-border text-center shift">
-
-          <div class="col-sm-4">
-            <a class="footer-anim" href="index.html">Home</a>
-          </div>
-
-          <div class="col-sm-4">
-            <a class="footer-anim" href="#">Privacy Policy</a>
-          </div>
-
-          <div class="col-sm-4">
-            <a class="footer-anim" href="#">Contact Us</a>
-          </div>          
-
-        </div>
-        <div class="text-center">
-          <img class="footer-logo" src="img/SS_logo.png">
-          <h5>Steven Sobieraj, Attorney at Law</h5>
-          <p>Call today <strong><a class="phone" href="tel:7605473915">760-547-3915</a></strong></p>
-          <p class="copyright">&copy; 2018 All Rights Reserved</p>
-        </div> 
-      </div>
-    </footer>
+    <?php include "footer.php";?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
