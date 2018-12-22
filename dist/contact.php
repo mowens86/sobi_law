@@ -49,16 +49,35 @@
     <section id="page-info">
       <div class="container">
         <div class="row">
-
+          
           <div class="col-sm-7">
             <h4 class="h4-content pb-3">Contact Steven Sobieraj, Attorney at Law</h4>
             <h6 class="pb-2 page-p">Serving Out of Carlsbad for San Diego, Orange, Riverside, and Los Angeles Counties.</h6>
-            <p><strong>Phone: <a class="phone" href="tel:7605473915">760-547-3915</a></p></strong>
+            <p><strong>Phone: <a class="phone" href="tel:7605473915">760-547-3915</a></strong></p>
             <iframe class="pb-3 iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44957.95379215905!2d-117.29613543012245!3d33.121703319769935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C+CA!5e0!3m2!1sen!2sus!4v1545435993582" frameborder="0" allowfullscreen></iframe>
             <h5 class="page-cta text-center">Discuss Your Options with Your Local Attorney at Law.<br> Call <a class="phone" href="tel:7605473915">760-547-3915</a> For a Free Consultation.</h5>
           </div>
-
-          <?php include "other-form.php";?>
+        
+          
+          <div class="col-sm-5 main-form">
+            <form action="" class="text-center page-form-overlay">
+              <h2 class="text-center">Schedule Your Free Consultation</h2>
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your E-mail" required>
+              <input type="tel" name="phone" placeholder="Your Phone #" required>
+              <select name="selection" id="client">
+                <option value="default">Are you a new client?</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="neither">I'm neither</option>
+              </select>
+              <textarea name="" id="textarea" placeholder="Tell us a little about your case"></textarea>
+              <div class="g-recaptcha" data-sitekey="6LdW2IMUAAAAAE1sC0dk8dv21teByaJtxKgyLc4V"></div>
+              <div class="btn-container">
+                <button type="submit" class="form-btn"><span class="form-span">Submit</span></button>
+              </div>
+            </form>
+          </div>
 
         </div>
       </div>

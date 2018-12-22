@@ -725,7 +725,7 @@ blockquote .b-quo {
 
 #page-info .iframe {
 	width: 100%;
-	height: 50%;	
+	height: 30%;
 }
 
 /*////////////////////////////////*/
@@ -863,6 +863,10 @@ footer.shift .footer-anim:hover:after {
 		font-size: 1.25rem;
 	}
 
+	#page-info .iframe {
+		width: 100%;
+		height: 50%;
+	}
 
 }
 
@@ -886,5 +890,5 @@ footer.shift .footer-anim:hover:after {
 	.main-form button {
 		max-width: 1000px;
 		height: 50px;
-}
+	}
 }
