@@ -12,6 +12,8 @@ $traffic-showcase: url(../img/car-accident.jpg);
 $estate-showcase: url(../img/real_estate.jpg);
 $civil-showcase: url(../img/personal_injury.jpg);
 $testimonials-showcase: url(../img/testimonials.jpg);
+$about-showcase: url(../img/library.jpg);
+$contact-showcase: url(../img/lady-justice.jpg);
 $priv-showcase: url(../img/library.jpg);
 
 $header-font: 'Lustria', serif;
@@ -43,6 +45,9 @@ $nav-font: 'Patua One', cursive;
     12.CIVIL LITIGATION
     13.ATTORNEY SERVICES
 	14.TESTIMONIALS
+	15.PRIVACY
+	16.ABOUT
+	17.CONTACT
 
 /---- FOOTER & MEDIA QUERIES -----/
 
@@ -659,8 +664,6 @@ nav.shift ul li a:hover:after {
     margin-top: 55px;
 }
 
-
-
 blockquote .b-quo {
   position: relative;
   color: #888;
@@ -686,6 +689,40 @@ blockquote .b-quo {
     margin-top: 55px;
 }
 
+/*////////////////////////////////*/
+/*// 16. ABOUT-SHOWCASE //*/
+
+#about-showcase {
+	background-image: $about-showcase;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 55px;
+}
+
+#page-info .steven {
+	width: 250px;
+	border-radius: 50%;
+	border: 2px solid $primary-color;
+}
+
+/*////////////////////////////////*/
+/*// 17. CONTACT-SHOWCASE //*/
+
+#contact-showcase {
+	background-image: $contact-showcase;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 55px;
+}
+
+#page-info .iframe {
+	width: 100%;
+	height: 50%;	
+}
 
 /*////////////////////////////////*/
 /*// FOOTER //*/

@@ -22,6 +22,9 @@
     12.CIVIL LITIGATION
     13.ATTORNEY SERVICES
 	14.TESTIMONIALS
+	15.PRIVACY
+	16.ABOUT
+	17.CONTACT
 
 /---- FOOTER & MEDIA QUERIES -----/
 
@@ -545,6 +548,35 @@ blockquote .b-quo {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 55px; }
+
+/*////////////////////////////////*/
+/*// 16. ABOUT-SHOWCASE //*/
+#about-showcase {
+  background-image: url(../img/library.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 55px; }
+
+#page-info .steven {
+  width: 250px;
+  border-radius: 50%;
+  border: 2px solid #333; }
+
+/*////////////////////////////////*/
+/*// 17. CONTACT-SHOWCASE //*/
+#contact-showcase {
+  background-image: url(../img/lady-justice.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 55px; }
+
+#page-info .iframe {
+  width: 100%;
+  height: 50%; }
 
 /*////////////////////////////////*/
 /*// FOOTER //*/
