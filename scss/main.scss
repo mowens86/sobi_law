@@ -223,7 +223,6 @@ nav.shift ul li a:hover:after {
 	font-size: 24px;
 	background: rgba(255,255,255,.05);
 	transform-style: preserve-3d;
-	backface-visibility: hidden;
 	border-radius: 10px;
 	text-transform: uppercase;
 	color: #fff;
@@ -355,7 +354,6 @@ nav.shift ul li a:hover:after {
 	font-size: 24px;
 	background: rgba(255,255,255,.05);
 	transform-style: preserve-3d;
-	backface-visibility: hidden;
 	border-radius: 10px;
 	color: $secondary-color;
 	transition: 1s;
@@ -434,9 +432,6 @@ nav.shift ul li a:hover:after {
 /*////////////////////////////////*/
 /*// 7. FORM //*/
 
-.main-form {
-	
-}
 
 .main-form .form-overlay {
 	background-color: rgba(0,0,0,0.5);

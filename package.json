@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "node-sass -w scss/ -o docs/css/ --recursive"
+    "sass": "sass --watch scss:docs/css"
   },
   "author": "Michael Owens",
   "license": "MIT"

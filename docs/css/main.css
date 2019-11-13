@@ -35,26 +35,32 @@
 /*////////////////////////////////*/
 /*// 1. BASE STYLES //*/
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lustria", serif; }
+  font-family: "Lustria", serif;
+}
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: .85rem; }
+  font-size: 0.85rem;
+}
 
 /*////////////////////////////////*/
 .bottom-border {
-  border-bottom: 3px solid #d9b00d; }
+  border-bottom: 3px solid #d9b00d;
+}
 
 .border-top {
-  border-top: 3px solid #d9b00d; }
+  border-top: 3px solid #d9b00d;
+}
 
 /*////////////////////////////////*/
 /*// 3. NAVIGATION BAR //*/
@@ -63,10 +69,12 @@ p {
   border: 2px solid #d9b00d;
   border-radius: 5px;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 .navbar {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 .navbar-c,
 #navbarDropdown,
@@ -74,31 +82,38 @@ p {
   color: #730335;
   font-family: "Patua One", cursive;
   text-transform: uppercase;
-  font-size: .8rem; }
+  font-size: 0.8rem;
+}
 
 #nav-button {
-  border: 1px solid #333; }
+  border: 1px solid #333;
+}
 
 /* Navigation Animation Effects */
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .4s; }
+  transition: all 0.4s;
+}
 
 .navbar-c:hover,
 #navbarDropdown:hover,
 .dropdown-item:hover {
-  color: #d9b00d; }
+  color: #d9b00d;
+}
 
 nav ul li a:hover {
-  color: #555; }
+  color: #555;
+}
 
 nav.shift ul li a {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+}
 
 nav.shift ul li a:hover {
-  color: #d9b00d; }
+  color: #d9b00d;
+}
 
 nav.shift ul li a:after {
   display: block;
@@ -110,19 +125,21 @@ nav.shift ul li a:after {
   margin: auto;
   width: 100%;
   height: 1px;
-  content: '.';
+  content: ".";
   color: transparent;
   background: #730335;
   box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, 0.4);
   visibility: none;
   opacity: 0;
   z-index: -1;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 nav.shift ul li a:hover:after {
   opacity: 1;
   visibility: visible;
-  height: 100%; }
+  height: 100%;
+}
 
 /*////////////////////////////////*/
 /*// 4. SHOWCASE //*/
@@ -132,19 +149,23 @@ nav.shift ul li a:hover:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 55px; }
+  margin-top: 55px;
+}
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 #showcase,
 .overlay {
-  height: 450px; }
+  height: 450px;
+}
 
 #showcase h1 {
   font-size: 2rem;
   color: #fff;
-  padding: 4rem 0; }
+  padding: 4rem 0;
+}
 
 #showcase a {
   position: absolute;
@@ -154,7 +175,8 @@ nav.shift ul li a:hover:after {
   text-align: center;
   transform-style: preserve-3d;
   perspective: 1000px;
-  transform-origin: center center; }
+  transform-origin: center center;
+}
 
 #showcase span {
   position: absolute;
@@ -168,29 +190,34 @@ nav.shift ul li a:hover:after {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.05);
   transform-style: preserve-3d;
-  backface-visibility: hidden;
   border-radius: 10px;
   text-transform: uppercase;
   color: #fff;
-  transition: 1s; }
+  transition: 1s;
+}
 
 #showcase span.front {
-  transform: rotateX(0deg) translateZ(20px); }
+  transform: rotateX(0deg) translateZ(20px);
+}
 
 #showcase a:hover span.front {
-  transform: rotateX(-180deg) translateZ(20px); }
+  transform: rotateX(-180deg) translateZ(20px);
+}
 
 #showcase span.back {
-  transform: rotateX(180deg) translateZ(20px); }
+  transform: rotateX(180deg) translateZ(20px);
+}
 
 #showcase a:hover span.back {
-  transform: rotateX(0deg) translateZ(20px); }
+  transform: rotateX(0deg) translateZ(20px);
+}
 
 #showcase span.center {
-  background: #730335; }
+  background: #730335;
+}
 
 #showcase span.center:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -198,58 +225,70 @@ nav.shift ul li a:hover:after {
   height: 100%;
   background: #d9b00d;
   border-radius: 10px;
-  transform: translateZ(-1px); }
+  transform: translateZ(-1px);
+}
 
 #showcase a:hover span.center {
-  transform: rotateX(-180deg); }
+  transform: rotateX(-180deg);
+}
 
 /*////////////////////////////////*/
 /*// 5. MAIN AREA //*/
 #main-info h2 {
   padding-top: 3rem;
   font-size: 1.5rem;
-  color: #730335; }
+  color: #730335;
+}
 
 #main-info h4,
 #law-areas h4 {
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 #main-info .row {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+}
 
 #main-info-cta {
   color: #333;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+}
 
 #main-info-cta .phone {
   text-decoration: none;
   color: #730335;
-  transition: .5s; }
+  transition: 0.5s;
+}
 
 #main-info-cta .phone:hover {
-  color: #d9b00d; }
+  color: #d9b00d;
+}
 
 /*////////////////////////////////*/
 /*// 6. AREAS OF LAW //*/
 .law-overlay {
   background-color: rgba(0, 0, 0, 0.7);
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+}
 
 #law-areas {
   background-image: url(../img/justice.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 #law-areas .h2-law {
   font-size: 1.5rem;
   color: #fff;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+}
 
 #law-areas .img-fluid {
   vertical-align: top;
-  width: 100%; }
+  width: 100%;
+}
 
 #law-areas .flip {
   position: absolute;
@@ -259,11 +298,13 @@ nav.shift ul li a:hover:after {
   text-align: center;
   transform-style: preserve-3d;
   perspective: 1000px;
-  transform-origin: center center; }
+  transform-origin: center center;
+}
 
 #law-areas .col-sm-3 {
   min-height: 250px;
-  min-width: 270px; }
+  min-width: 270px;
+}
 
 #law-areas .law-span {
   position: absolute;
@@ -274,38 +315,46 @@ nav.shift ul li a:hover:after {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.05);
   transform-style: preserve-3d;
-  backface-visibility: hidden;
   border-radius: 10px;
   color: #fff;
-  transition: 1s; }
+  transition: 1s;
+}
 
 #law-areas .law-span.front {
-  transform: rotateY(0deg) translateZ(30px); }
+  transform: rotateY(0deg) translateZ(30px);
+}
 
 #law-areas .law-span.front i {
-  padding-top: 25px; }
+  padding-top: 25px;
+}
 
 #law-areas .flip:hover .law-span.front {
-  transform: rotateY(-180deg) translateZ(30px); }
+  transform: rotateY(-180deg) translateZ(30px);
+}
 
 #law-areas .law-span.back {
-  transform: rotateY(180deg) translateZ(30px); }
+  transform: rotateY(180deg) translateZ(30px);
+}
 
 #law-areas .law-span.back p {
   padding: 1.75rem 1rem;
-  color: #fff; }
+  color: #fff;
+}
 
 #law-areas .flip:hover .law-span.back {
-  transform: rotateY(0deg) translateZ(30px); }
+  transform: rotateY(0deg) translateZ(30px);
+}
 
 #law-areas .law-span.center {
-  background: #730335; }
+  background: #730335;
+}
 
 #law-areas .law-span.center h4 {
-  margin-top: 180px; }
+  margin-top: 180px;
+}
 
 #law-areas .law-span.center:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -313,13 +362,15 @@ nav.shift ul li a:hover:after {
   height: 100%;
   background: #d9b00d;
   border-radius: 10px;
-  transform: translateZ(-1px); }
+  transform: translateZ(-1px);
+}
 
 #law-areas .flip:hover .law-span.center {
-  transform: rotateY(-180deg); }
+  transform: rotateY(-180deg);
+}
 
 #law-areas .flip-btn {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-family: "Patua One", cursive;
   color: #730335;
   width: 80%;
@@ -331,48 +382,57 @@ nav.shift ul li a:hover:after {
   border-radius: 10px;
   background: white;
   margin-top: 165px;
-  transition: all .5s; }
+  transition: all 0.5s;
+}
 
 #law-areas .flip-btn:hover {
   background: #730335;
-  color: #fff; }
+  color: #fff;
+}
 
 /*////////////////////////////////*/
 /*// 7. FORM //*/
 .main-form .form-overlay {
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .main-form h2 {
   padding-top: 1.5rem;
-  padding-bottom: .85rem;
+  padding-bottom: 0.85rem;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 1.5rem;
-  color: #fff; }
+  color: #fff;
+}
 
 .main-form input,
 .main-form select,
 .main-form textarea {
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 10px;
-  margin: .8rem;
+  margin: 0.8rem;
   text-transform: uppercase;
-  color: #333; }
+  color: #333;
+}
 
 .main-form input,
 .main-form select {
-  width: 90%; }
+  width: 90%;
+}
 
 .main-form textarea {
-  width: 90%; }
+  width: 90%;
+}
 
 .main-form .btn-container {
-  height: 90px; }
+  height: 90px;
+}
 
 .main-form button {
   width: 52.5%;
-  height: 50px; }
+  height: 50px;
+}
 
 /* Submit Button Effect */
 .main-form form .form-btn {
@@ -384,36 +444,41 @@ nav.shift ul li a:hover:after {
   background-color: #730335;
   border: 2px solid #333;
   overflow: hidden;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .main-form form .form-btn:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
   background: #d9b00d;
-  transition: .5s ease-in-out;
-  z-index: -1; }
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+}
 
 .main-form form .form-btn:hover::before {
   left: 0;
-  z-index: -1; }
+  z-index: -1;
+}
 
 .main-form form .form-btn span {
-  transition: color .5s;
+  transition: color 0.5s;
   color: #fff;
   z-index: 1;
   left: 0;
   top: 0;
   padding-top: 5px;
   font-size: 1.25rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .main-form form .form-btn:hover span {
   color: #111;
-  transition: color .5s; }
+  transition: color 0.5s;
+}
 
 .main-form .g-recaptcha {
   padding-bottom: 1rem;
@@ -429,40 +494,49 @@ nav.shift ul li a:hover:after {
   transform: scale(0.77);
   -webkit-transform-origin: 0 0;
   transform-origin: 0;
-  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.77,M12=0,M21=0,M22=0.77,SizingMethod='auto expand'); }
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.77,M12=0,M21=0,M22=0.77,SizingMethod="auto expand");
+}
 
 /*////////////////////////////////*/
 /*// 8. PAGES GENERAL CLASSES //*/
 .page-overlay {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 #def-showcase,
 #traffic-showcase,
 .page-overlay {
-  height: 300px; }
+  height: 300px;
+}
 
 .h1-showcase {
   font-size: 2rem;
   color: #fff;
   padding-top: 4rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+}
 
 .h3-showcase {
   font-size: 1.25rem;
-  color: #fff; }
+  color: #fff;
+}
 
 #page-info {
-  margin: 3rem 0; }
+  margin: 3rem 0;
+}
 
 .page-form-overlay {
   background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .h4-content {
-  color: #730335; }
+  color: #730335;
+}
 
 .page-p {
-  line-height: 1.75; }
+  line-height: 1.75;
+}
 
 .page-cta {
   border-top: 2px solid #ccc;
@@ -470,22 +544,27 @@ nav.shift ul li a:hover:after {
   padding: 1rem 0;
   font-weight: bold;
   font-style: italic;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
 #page-info .phone {
   text-decoration: none;
   color: #730335;
-  transition: .5s; }
+  transition: 0.5s;
+}
 
 #page-info .phone:hover {
-  color: #d9b00d; }
+  color: #d9b00d;
+}
 
 .highlight {
   color: #730335;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .italics-p {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /*////////////////////////////////*/
 /*// 9. DEF-SHOWCASE //*/
@@ -495,7 +574,8 @@ nav.shift ul li a:hover:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 55px; }
+  margin-top: 55px;
+}
 
 /*////////////////////////////////*/
 /*// 10. TRAFFIC-SHOWCASE //*/
@@ -505,7 +585,8 @@ nav.shift ul li a:hover:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 55px; }
+  margin-top: 55px;
+}
 
 /*////////////////////////////////*/
 /*// 11. ESTATE-SHOWCASE //*/
@@ -515,7 +596,8 @@ nav.shift ul li a:hover:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 55px; }
+  margin-top: 55px;
+}
 
 /*////////////////////////////////*/
 /*// 12. CIVIL-SHOWCASE //*/
@@ -525,7 +607,8 @@ nav.shift ul li a:hover:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 55px; }
+  margin-top: 55px;
+}
 
 /*////////////////////////////////*/
 /*// 13. ATTORNEY SERVICES //*/
@@ -537,18 +620,21 @@ nav.shift ul li a:hover:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 55px; }
+  margin-top: 55px;
+}
 
 blockquote .b-quo {
   position: relative;
-  color: #888; }
+  color: #888;
+}
 
 .block-foot {
   font-family: "Patua One", cursive;
   color: #730335;
   border-bottom: 3px solid #555;
   border-radius: 10px;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+}
 
 /*////////////////////////////////*/
 /*// 15. PRIVACY-SHOWCASE //*/
@@ -558,7 +644,8 @@ blockquote .b-quo {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 55px; }
+  margin-top: 55px;
+}
 
 /*////////////////////////////////*/
 /*// 16. ABOUT-SHOWCASE //*/
@@ -568,12 +655,14 @@ blockquote .b-quo {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 55px; }
+  margin-top: 55px;
+}
 
 #page-info .steven {
   width: 250px;
   border-radius: 50%;
-  border: 2px solid #333; }
+  border: 2px solid #333;
+}
 
 /*////////////////////////////////*/
 /*// 17. CONTACT-SHOWCASE //*/
@@ -583,46 +672,57 @@ blockquote .b-quo {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 55px; }
+  margin-top: 55px;
+}
 
 #page-info .iframe {
   width: 100%;
-  height: 30%; }
+  height: 30%;
+}
 
 /*////////////////////////////////*/
 /*// FOOTER //*/
 footer {
-  border-top: 3px solid #d9b00d; }
+  border-top: 3px solid #d9b00d;
+}
 
 .footer-logo {
-  margin: 1rem 0; }
+  margin: 1rem 0;
+}
 
 footer .footer-border {
-  border-bottom: 3px solid #d9b00d; }
+  border-bottom: 3px solid #d9b00d;
+}
 
 footer .row {
-  padding: 1rem 0; }
+  padding: 1rem 0;
+}
 
 #footer .phone {
   text-decoration: none;
   color: #730335;
-  transition: .5s; }
+  transition: 0.5s;
+}
 
 #footer a:hover {
-  color: #d9b00d; }
+  color: #d9b00d;
+}
 
 #footer p {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  color: #333; }
+  color: #333;
+}
 
 #footer h5,
 #footer p {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 #footer .copyright {
-  font-size: .75rem; }
+  font-size: 0.75rem;
+}
 
 #footer .footer-anim,
 #footer .footer-anim:after,
@@ -630,22 +730,26 @@ footer .row {
   color: #730335;
   font-family: "Patua One", cursive;
   text-transform: uppercase;
-  font-size: .8rem;
-  transition: all .4s;
+  font-size: 0.8rem;
+  transition: all 0.4s;
   text-decoration: none;
   display: block;
-  padding: .5rem; }
+  padding: 0.5rem;
+}
 
 /* Footer Animation Effects */
 #footer .footer-anim:hover {
-  color: #d9b00d; }
+  color: #d9b00d;
+}
 
 footer.shift .footer-anim {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+}
 
 footer.shift .footer-anim:hover {
-  color: #d9b00d; }
+  color: #d9b00d;
+}
 
 footer.shift .footer-anim:after {
   display: block;
@@ -657,54 +761,80 @@ footer.shift .footer-anim:after {
   margin: auto;
   width: 100%;
   height: 1px;
-  content: '.';
+  content: ".";
   color: transparent;
   background: #730335;
   box-shadow: 6px 6px 5px 1px rgba(0, 0, 0, 0.4);
   visibility: none;
   opacity: 0;
   z-index: -1;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 footer.shift .footer-anim:hover:after {
   opacity: 1;
   visibility: visible;
-  height: 100%; }
+  height: 100%;
+}
 
 #footer .footer-logo {
   height: 100px;
-  width: 100px; }
+  width: 100px;
+}
 
 /*////////////////////////////////*/
 /*// MEDIA QUERIES //*/
 @media (min-width: 500px) {
   #main-info p {
-    font-size: .95rem; }
+    font-size: 0.95rem;
+  }
+
   #showcase h1 {
     font-size: 2.5rem;
-    padding: 4rem 0; }
+    padding: 4rem 0;
+  }
+
   #main-info h2,
-  #law-areas .h2-law,
-  #form h2 {
-    font-size: 2rem; }
+#law-areas .h2-law,
+#form h2 {
+    font-size: 2rem;
+  }
+
   #law-areas .flip {
-    transform: translate(0, 0); }
+    transform: translate(0, 0);
+  }
+
   #main-info h4,
-  #law-areas h4 {
-    font-size: 1.25rem; }
+#law-areas h4 {
+    font-size: 1.25rem;
+  }
+
   #page-info .iframe {
     width: 100%;
-    height: 50%; } }
-
+    height: 50%;
+  }
+}
 @media (min-width: 1200px) {
   #showcase h1 {
-    padding: 6rem 0; }
+    padding: 6rem 0;
+  }
+
   .h1-showcase {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+  }
+
   .h3-showcase {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+  }
+
   .nav-item {
-    margin-left: 1rem; }
+    margin-left: 1rem;
+  }
+
   .main-form button {
     max-width: 1000px;
-    height: 50px; } }
+    height: 50px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
