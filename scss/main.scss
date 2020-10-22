@@ -876,6 +876,15 @@ footer.shift .footer-anim:hover:after {
 
 }
 
+@media (max-width: 576px) {
+
+	#law-areas .center-padding {		
+		left: 110px;
+		position: relative;
+	}
+
+}
+
 @media (min-width: 1200px) {
 	#showcase h1 {
 		padding: 6rem 0;
